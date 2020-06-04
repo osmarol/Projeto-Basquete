@@ -1,0 +1,49 @@
+.Placar {
+    background: slategray;
+    width: 870px;
+    height: 300px;
+}
+
+.Casa {
+    background: red;
+    padding: 40px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px; 
+    height: 180px;  
+}
+.Partida {
+    background: burlywood;
+    padding: 20px;
+    float: left;
+    margin-left: 30px;  
+    margin-top: 20px; 
+}
+.Visitante {
+    background: blue;
+    padding: 40px;
+    float: left;
+    margin-left: 230px;
+    margin-top: -125px; 
+    height: 180px;  
+    width: 200px;  
+}
+.Gol {
+    margin-left: 80px;
+    font-size: 30px;
+    
+}
+.BtGol {
+    margin-left: 5px;
+}
+.Casinha {
+    margin-left: 20px;
+}
+.Titulo {
+    margin-left: 20px;
+}
+.TituloVisitante {
+    margin-left: 20px;
+}
+
+
