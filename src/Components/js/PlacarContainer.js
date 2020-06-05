@@ -4,6 +4,8 @@ import React from 'react'; // Importa o pacote de arquivos do React.
 import Time from './Time'; // Importa o caminho da classe.
 import Partida from './Partida';
 import '../css/Placar.css';
+import Bulls from '../images/bulls.png';
+import Celtics from '../images/celtics.png';
 
 // 3) CRIA O COMPONENTE PRINCIPAL COM OS IMPORTES: 
 // COM JSX CRIA O CONCEITO DE CLASSE:
@@ -59,10 +61,11 @@ export default class PlacarContainer extends React.Component {
         
             <div className='Placar'>
                 <div className='Casa'>
-                    <h2 className="Titulo">Time da Casa</h2>
+                        <img src={Bulls} alt="bulls" />
+                    {/* <h2 className="Titulo">Chicago</h2> */}
                     {/* <Time nome={casa.nome}  */}
                     <Time // Referência ao Componente Time da Casa
-                        nome={this.props.casa.nome} // Acessa as Propriedade do objeto
+                        //nome={this.props.casa.nome} // Acessa as Propriedade do objeto
                         gols={this.state.gols_casa}
                         marcarGol={this.marcarGolCasa.bind(this)} // Acessa os Métodos da Classe
                         marcarGolDois={this.marcarGolDoisPontosCasa.bind(this)} // Acessa os Métodos da Classe
@@ -78,10 +81,11 @@ export default class PlacarContainer extends React.Component {
                     /> 
                 </div>
                 <div className='Visitante'>
-                    <h2 className="TituloVisitante">Time Visitante</h2>
+                        <img src={Celtics} alt="celtics" />
+                    {/* <h2 className="TituloVisitante">Boston</h2> */}
                     {/*<Time nome={visitante.nome*/} 
                     <Time // Referência ao Componente Time Visitante.
-                        nome={this.props.visitante.nome}  
+                        //nome={this.props.visitante.nome}  
                         gols={this.state.gols_visitante}
                         marcarGol={this.marcarGolVisitante.bind(this)}
                         marcarGolDois={this.marcarGolDoisPontosVisita.bind(this)}
