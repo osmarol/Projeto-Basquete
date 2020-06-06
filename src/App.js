@@ -5,19 +5,19 @@ import PlacarContainer from './Components/js/PlacarContainer';
 // 1) CRIAR UM OBJETO:
 
 const placar = {  // Objeto Placa
-  casa: { // Chave do Objeto Placar 
+  /* casa: { // Chave do Objeto Placar 
     nome: "Chicago Bulls", // Chva do Objeto Casa
-  },
+  }, */
   partida: { // Chava do Objeto Placar 
       estadio: "Chicago", // Chave do Objeto partida
       data: "10/04/2020",
       horario: "19h",
   },
-  visitante: { // Chave do Objeto Placar
+  /* visitante: { // Chave do Objeto Placar
       nome: "Boston Celtics", // Chave do Objeto visitante
-  }    
+  }     */
 };     
-
+ 
 export default class App extends React.Component {
   render() {
   
@@ -30,9 +30,9 @@ export default class App extends React.Component {
   
   // 2) CRIA VARIÁVEIS E ARMAZENA VALORES:
           
-          casa={placar.casa} 
+          // casa={placar.casa} 
           partida={placar.partida}
-          visitante={placar.visitante} 
+          // visitante={placar.visitante}  
           clima={'Frio'}  
         />   
   }

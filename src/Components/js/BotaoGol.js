@@ -5,17 +5,17 @@ export default class BotaoGol extends React.Component {
 
     MetodoUmPonto(e) { // Método que usa como parâmetro um object event: e
         e.preventDefault(); // Método cancelar o comportamento padrão do evento.
-        this.props.marcarGol(); // Acessa propriedades e métodos.   
+        this.props.golMarcado(); // Acessa propriedades e métodos.   
     } 
 
     MetodoDoisPontos(e) {
         e.preventDefault();
-        this.props.marcarGolDois();
+        this.props.golMarcadoDois();
     }
 
     MetodoTresPontos(event) {
         event.preventDefault();
-        this.props.marcarGolTres();
+        this.props.golMarcadoTres();
     } 
 
     render() { // renderizar conteúdo
